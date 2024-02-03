@@ -11,8 +11,8 @@
 mac电脑安装homebrew，选择最新版的包。  
     [https://github.com/Homebrew/brew/releases/download/4.2.6/Homebrew-4.2.6.pkg]  
     安装完成后，设置环境变量。`vim ～/.zshrc` ，加入如下两行内容，保存退出。  
-    `export HOMEBREW_PATH="/opt/homebrew/bin/"  
-    export PATH=".$PATH:$HOMEBREW_PATH"`
+    `export HOMEBREW_PATH="/opt/homebrew/bin/"`
+    `export PATH=".$PATH:$HOMEBREW_PATH"`
 （5）git  
     使用brew来安装  
     `brew install git && source .zshrc`  
