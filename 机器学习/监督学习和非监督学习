@@ -7,4 +7,4 @@
     (1)give dataset,don't give right answer,machine found the similar data together in dataset, and produce the algorith.Like the customer group class
     (2)cluster algorithm
 3.standard notation
-    supervised learning: a part of (x,y) data refer single data example. x and y have superscript (i) , the (i) refer each row data example.
+    supervised learning: a part of (x,y) data refer single data example. x and y have superscript (i) , the (i) refer each row data example.f
