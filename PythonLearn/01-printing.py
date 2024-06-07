@@ -48,3 +48,9 @@ print("\t\tEthanFan\n\txinGe \n\t"+ msg_2 + "\n\t\tjianhe")
 4/2
 1+2.00
 print(1000_000_000.00_00)
+
+x,y,z=0,1,2
+print(x)
+x,y,z="0/1",1.01,2
+print(x)
+print(y)
