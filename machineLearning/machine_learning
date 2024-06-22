@@ -31,3 +31,22 @@
     use vectorization code in python
     import NumPy as np
     f = np.dot(w,x)
+8.feature scale
+    let each feature comparable by scale,like 300<x_1<2000 , by divde 2000 to scaling 0.15<x_1<1
+    two common method:  mean normalization and Z-score normalization
+9.judge cost function J_w,b(x) is if converging
+    by learning curv, by the increase of number of iterations, the J_wb(x) will more and more less until flat, declare the it is converging. other wise,the learning rate is too large or the code has bug.
+    the curv is quickly decrease, so the learning rate value is appropriate.
+    the curv is slowly decrease, the learning rate value is too small.
+    the curv is increase and decrease or continuous increase, the learing rate is too large.
+10.classification prolem
+    use logistic regression to solve, do not use linear regression which not fit to solve .
+    draw decision boundries to classification result, the equation is f_w-hat,b(x-hat) = g(z) = 1/(1+e^(-z))
+11.logistic regression
+    use loss function express 
+12.overfitting
+    also say large variance ,contract underfitting or high bias. just well is called generalization.
+13.addressing overfitting
+    (1)collect more data examples: so that train a new model
+    (2)reduce the features: pick out the most useful features to train , eliminate other features
+    (3)regulization: minimize the parameter of high index features, reduce the impact which features
