@@ -66,3 +66,12 @@ print(f'final is {bicycles}')
 # manage list reverse
 bicycles=["jeante","trick",'cannondale','others','trick']
 print(len(bicycles))
+
+# iterate list 
+bicycles=["jeante","trick",'cannondale','others','trick']
+for bicycle in bicycles:
+    print(f'bicycle name is {bicycle}\n')
+print('there are all bicycles')
+
+for i in range(1,5):
+    print(f'i name is {i}')

@@ -16,3 +16,7 @@
         ii.列表临时排序： 列表实际存储顺序不变 列表名.sorted() --按字母顺序，从前往后排序；sorted(listName,reverse=true) ---按字母顺序，从后往前排序,like sorted(bicycles,reverse=True)
         iii.倒着打印列表（永久修改列表顺序）： 列表名.reverse() ---将列表存储顺序反转
         iiii.列表长度：使用函数len(listName) 来计算，比如：列表里有5个元素，那结果就是5 
+    (7)列表操作
+        i. for循环遍历列表. 第一行最后的冒号必须有。
+            for itemName in listName:
+                print(itemName)
