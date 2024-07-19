@@ -1,0 +1,8 @@
+1. Overview of DevOps
+    (1)DevOps is the practice of development and operation engineers working together during the entire development lifecycle,
+ following Lean and Agile principles that allow them to deliver software in a rapid and continuous manner.
+    (2)DevOps is not it is not just Dev and Ops working together. It is a cultural change and a different way to work. 
+DevOps has three dimensions: culture, methods, and tools. Of these, culture is the most important. 
+    (3)The essential characteristics of DevOps include cultural change, automated pipelines, infrastructure as code, 
+immutable infrastructure, cloud native application design, the ecosystem of containers, and how to deploy with immutable infrastructure.
+    (4)The DevOps Handbook in 2016, helped practitioners understand how DevOps worked.
