@@ -158,3 +158,19 @@ for i in my_foods:
 print('\nfriends favorite food is:')
 for i in friend_foods:
     print(i)
+
+# tuple practice
+dimentions = (100,50)
+print(dimentions[0])
+print(dimentions[1])
+# dimentions[0] = 200
+print('original dimentions')
+for dimetion in dimentions:
+    print(dimetion)
+
+dimentions = (20,10,1)
+print(dimentions[0])
+print(dimentions[1])
+print('modified dimentions')
+for dimetion in dimentions:
+    print(dimetion)
