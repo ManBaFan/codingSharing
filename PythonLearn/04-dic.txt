@@ -1,0 +1,40 @@
+字典
+1. 定义
+    花括号包着，里面有一系列的 key：value 形状的键值对，键值对之间用逗号分隔，
+最后一个键值对后紧跟一个逗号。
+    如 dic_name = {key1:value1,key2:value2,key3:value3,}
+    （1）创建空字典：emp_dic = {}
+    （2）创建一个较大的字典，放在了多行中。like，
+    large_dic = {
+        k1:v1,
+        k2:v2,
+        k3:v3,
+    }
+2. 查看
+    （1）通过 字典名[键名] 来读取。like，dic_name[key1]
+    （2）通过get()方法来读取。区别是，如果不确定所使用“键名” 是否存在，就用get()。因为此种情
+        况，使用 [] 方式或取会报错。
+    （3）get(arg1,arg2) get方法中传入两个参数，第一个是“键名”，必需的；第二个是“如果键名不
+    存在时，应该返回的值”，是可选的。 如果第二个参数为空，且“键名”不存在时，函数返回None，表
+    示没有相应的值，这并非错误，只是一个表示所需值不存在的特殊值。
+3. 增加
+    通过 dic_name[new_key1] = new_value1 来增加键值对，且元素在字典内按添加顺序排列。
+4. 修改
+    通过直接赋值的方式进行修改，如： dic_name[key1] = new_value11 ，即将值修改。
+5. 删除
+    通过del 关键字删除，like， del dic_name[key1] ，即删除 key1 的键值对。
+6. 遍历
+    （1）得到所有的key和value，使用items(),如： for key,value in dic_name.items():
+    （2）得到所有的key，常用keys()，如 for key in dic_name.keys() 
+    或用
+     for key in dic_name:  默认会遍历所有key
+    （3）得到所有的value，使用values()，如 for value in dic_name.values():
+    （4）按特定顺序遍历：
+        sorted(dic_name.keys()): 按字母顺序排列
+    （5）为剔除重复项，可使用set 集合，将遍历结果放入集合中.
+        set(dic_name.values())
+        集合:
+        （a）也可以用花括号直接定义，里面元素用逗号分隔。区别是里面不是键值对。且集合内元素
+        排列没有顺序。集合内元素都是唯一的，不可重复。
+        like, set_name = {v1,v2,v3}
+        （b）可以用set()定义，参数里传入list。如： set(listName)
