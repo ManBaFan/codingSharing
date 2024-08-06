@@ -38,3 +38,7 @@
         排列没有顺序。集合内元素都是唯一的，不可重复。
         like, set_name = {v1,v2,v3}
         （b）可以用set()定义，参数里传入list。如： set(listName)
+7. 字典的嵌套
+    （1）列表嵌套字典，like dic1 = {} dic2 = {} list = [dic1,dic2]
+    （2）字典嵌套列表, like dic = {k1:[i1,i2,i3],k2:[i4],k3:[i4,i5]}
+    （3）字典嵌套字典, like dic = {k1:{kk1:vv1,kk2:vv2},k2:{k21:v21,k22:v22}}
