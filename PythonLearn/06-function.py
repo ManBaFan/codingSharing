@@ -84,3 +84,19 @@ while True:
     user_info = get_user5(n_f,n_l)
     print(f'user name info is {user_info}')
 
+# function's paragram is list
+def print_model(unprint_list,complete_list):
+    """print item"""
+    print_item = unprint_list.pop()
+    print(f"The print item is {print_item}")
+    complete_list.append(print_item)
+
+def show_print_model(complete_list):
+    """show prinit item"""
+    for item in complete_list:
+        print(f'The complete print item is {item}')
+
+unprint_list = ['dave','lisa','daria',2]
+complete_list = []
+print_model(unprint_list,complete_list)
+show_print_model(complete_list)

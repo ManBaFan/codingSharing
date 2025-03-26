@@ -1,4 +1,6 @@
 1. function define by "def"
 2. end of the function first line is ":"
 3. below the line is the function body
-4. 
+4. 切片表示法
+    function_name(List_name[:])
+    
