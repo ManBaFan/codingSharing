@@ -3,4 +3,4 @@
 # macos default file
 .DS_Store
 # IDE default file
-.vscode
+.vscode/
