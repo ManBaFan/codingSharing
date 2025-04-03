@@ -100,3 +100,25 @@ unprint_list = ['dave','lisa','daria',2]
 complete_list = []
 print_model(unprint_list,complete_list)
 show_print_model(complete_list)
+
+# 传递任意数量实参
+def buildprofile(*args):
+    print('The profile is:')
+    print(args)
+
+buildprofile('man','women',16)
+
+# 传递位置形参 + 任意数量实参
+def buildprofile_key(sex, *args):
+    print(f"The mesg is {sex} and ")
+    for arg in args:
+        print(f'- {arg}')
+buildprofile_key('male',11,'BC','Master')
+# 关键字形参 + 任意数量关键字实参
+def buildprofile_key_key(first,last, **userinfo):
+    userinfo['first_name']=first
+    userinfo['last_name']=last
+    return userinfo
+user_info = buildprofile_key_key('Ethan','Fan',size=16,sex='female',country='China')
+print(f'The user msg are {user_info}')
+
