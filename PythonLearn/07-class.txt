@@ -1,0 +1,8 @@
+1. class由class关键字定义，名字首字母一定是大写，名字后面跟冒号:
+2. class中默认传递参数self，必须位于第一个参数。
+3. class中的主方法名称必须是,两边各有两个下划线，常用__init__
+4. 如果class创建时需要传递参数，参数请写在主方法里，并且在主方法里复制给self。比如
+    class Dog:
+        def _init_(self,name,age):
+            self.name=name
+            self.age=age
