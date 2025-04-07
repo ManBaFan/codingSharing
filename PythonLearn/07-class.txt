@@ -3,6 +3,10 @@
 3. class中的主方法名称必须是,两边各有两个下划线，常用__init__
 4. 如果class创建时需要传递参数，参数请写在主方法里，并且在主方法里复制给self。比如
     class Dog:
-        def _init_(self,name,age):
+        def __init__(self,name,age):
             self.name=name
             self.age=age
+5. 类实例化。
+6. class的属性，定义在__init()__中
+7. 属性可以有默认值，直接使用 self.arg_name=default_value 来设置。
+8. 属性的值可以通过 实例对象直接调用属性名称来修改，也可以通过方法来修改。
