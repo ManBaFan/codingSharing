@@ -2,7 +2,9 @@
 2. k8s：  
 （1）k8s安装，使用sealos。  
 （2）k8s运维，包括节点扩缩容、服务高可用性保障、etcd运维。沉淀告警处理手册和运维可观测性指标。
-（3）k8s监控，树立运维指标和阈值，并输出grafana视图。  
+（3）k8s监控，树立运维指标和阈值，并输出grafana视图。 
+（4）k8s高可用，使用ingress-controller，tengine-nginx，keepalive来保障。etcd至少三节点，避免raft算法脑裂问题。
+（5）k8sHPA：pod水平扩缩容，从prometheus采集数据。根据pod cpu和内存的使用率，加上集群所剩资源，进行扩缩容策略。
 3. ceph: 使用rook-ceph安装方案。
 4. postgresql: 使用stolon-pg安装方案。  
 5. redis：使用redis operator安装方案，部署高可用版redis。

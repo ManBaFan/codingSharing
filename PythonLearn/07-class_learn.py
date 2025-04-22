@@ -66,3 +66,19 @@ my_car.read_mile()
 # incredible negative miles
 my_car.incre_mile(10)
 my_car.read_mile()
+
+# practice random modoule
+import random
+class Die:
+    def __init__(self,sides=6):
+        self.sides = sides
+    def roll_die(self):
+        result = random.randint(1,self.sides)
+        return result
+    def roll_times(self,times):
+        i=0
+        while i < times:
+            print(self.roll_die())
+            i+=1
+die = Die(20)
+die.roll_times(10)

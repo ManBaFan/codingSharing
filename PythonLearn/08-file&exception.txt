@@ -1,0 +1,43 @@
+1. 方法链式调用：a = contens.read_text('${path}') , a = a.splitlines()
+2. 在代码中显示文件路径时，应始终使用斜杠（/）,而不是反斜杠（\）。即便在windows系统中也是如此。
+3. 读取文本文件时，会将内容当作字符串。如果要当作数字书用时，需要使用int() float()进行转换。
+4. 读取文件：from pathlib import Path 
+5. 获取文件中的内容： Path.read_text(). 返回结果会比源文件内容多一个空行。path.read_text(encoding='utf-8')
+6. 相对路径和绝对路径。代码里的相对路径，是以当前工作目录为准。
+    # 当前工作目录
+    print("Current Working Directory:", os.getcwd())
+    # 脚本路径
+    print(f"脚本路径: {__file__}")
+    # 脚本所在目录
+    print("脚本所在目录:", Path(__file__).resolve().parent)
+    # 拼接目录名
+    data_file_path = parent_dir / 'data' / '08-file&exception.txt'
+7. splitlines() 将多行字符串转化成单行。
+8. 使用文件中内容，使用一个空字符串，便利读取内容将其赋值并追加给此。
+---
+9. 写入文本Path(path_value).write_text(args),如果指定的文件已存在，则会删除其，然后写入
+args内容;如果文件不存在，则会创建此文件。
+10. 只支持将字符串写入文本，如果要将数值类型写入，则要将其先转换成字符串。str()
+---
+11. 异常处理
+try:
+< >
+except exception:
+< >
+
+12. 只有在try代码块正常执行的时候，才执行的代码，放在else中
+try:
+< >
+except Exception_name:
+< >
+else:
+< >
+
+13. FileNotFoundError ZeroDivisionError:
+14. 读取多个文件，将文件放入列表，用for循环遍历即可
+15. 静默失败：用关键字 pass
+16. 决定报告哪些失败
+17. 分析文本 str.split() 将内容转换成列表。
+---
+18. 存储数据：json.dumps() and json.loads()
+19. 读取和保存用户数据
