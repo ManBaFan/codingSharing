@@ -1,0 +1,14 @@
+[
+  {
+    "article": "示例音频1",
+    "url": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+  },
+  {
+    "title": "示例音频2", 
+    "audio_url": "https://www.soundjay.com/misc/sounds/fail-buzzer-02.wav"
+  },
+  {
+    "name": "示例音频3",
+    "link": "https://www.soundjay.com/misc/sounds/success-fanfare-trumpets.wav"
+  }
+]

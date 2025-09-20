@@ -23,7 +23,7 @@
    ```
 4. 运行程序：
    ```bash
-   python python_tools/json_content_download.py
+   python main.py
    ```
 
 ### 方法2: 使用pip安装
